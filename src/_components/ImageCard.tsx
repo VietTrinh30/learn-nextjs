@@ -1,3 +1,4 @@
+import Rating from './Rating';
 function ImageCard() {
   return (
     <div className="pb-[128.571%] rounded-md relative w-full max-w-full">
@@ -42,10 +43,10 @@ function ImageCard() {
               </div>
             </div>
           </button>
-          {<div className="font-bold text-2xl mt-1">Goosebumps SDXL</div>}
+          <div className="font-bold text-2xl mt-1">Goosebumps SDXL</div>
         </div>
         <img
-          className="min-w-full  rounded-md"
+          className="min-w-full rounded-md"
           src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/aedfa342-7fd8-4537-b400-48ca296b4f58/width=450/slop_02206_.jpeg"
           alt="image"
         />
