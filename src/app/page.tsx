@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="grid grid-cols-5 gap-4 w-full py-10">
-        <div className="col-span-2">
+        <div className="col-span-2 self-center">
           <Feature />
         </div>
         <ImageCard />
