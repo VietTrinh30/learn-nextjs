@@ -1,4 +1,5 @@
-import Link from 'next/Link';
+import Link from 'next/link';
+
 function navigator({ title, iconPath, page }: { title: string; iconPath: string; page: string }) {
   return (
     <Link href={page}>
