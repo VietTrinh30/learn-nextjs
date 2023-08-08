@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="bg-blackRussian">
       <body suppressHydrationWarning={true}>
         <Header />
-        <div className="px-28 py-4 bg-rose-600">
+        <div className="px-28 py-4 ">
           <HomeNavigator />
           {children}
         </div>
