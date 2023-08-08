@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from './header';
+import HomeNavigator from '../_components/navigators/home_navigator';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -12,11 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-blackRussian">
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
-        {/* <head></head>
-        
-        <div>{children}</div> */}
+        <div className="px-28 py-4 bg-rose-600">
+          <HomeNavigator />
+          {children}
+        </div>
       </body>
     </html>
   );
